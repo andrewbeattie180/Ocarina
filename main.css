@@ -101,3 +101,19 @@ body{
 .arrows{
 	font-size: 25px;
 }
+.button_down{
+	top: 263px;
+    left: 561px;
+}
+.button_up{
+	top: 203px;
+    left: 561px;
+}
+.button_left{
+	top: 233px;
+    left: 530px;
+}
+.button_right{
+	top: 233px;
+    left: 591px;
+}
