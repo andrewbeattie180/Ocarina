@@ -1,21 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 body{
-    background: url("./img/n64controller.jpg");
     font-family: 'Press Start 2P', cursive;
-    text-align: center;
-    background-size:100%;
-    height: 100vh;
+   
 }
+
+.container{
+	text-align: center;
+	padding: 0 20%;
+	height:100%;
+}
+
+.buttons {
+	padding:100% 0;
+	top:0;
+	left:0;
+	border: solid 2px #000;
+	background-image: url('./img/n64controller.jpg');
+	background-position-x:center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position-y: 0%;
+	
+}
+
+.controller-image{
+	height:auto;
+}
+.controller-image, .buttons{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  	width: 100%;
+}
+
 
 /* Main Container -  this controls the size of the circle */
 .button_container
 {
-	width : 50px;
-	height : 50px;
+	width : 40px;
+	height : 40px;
 	margin : 0;
 	padding : 0;
 /*	border : 1px solid red; */
+}
+
+.arrowbutton{
+	width: 30px;
+	height: 30px;
 }
 
 /* Circle Main draws the actual circle */
@@ -27,6 +59,7 @@ body{
 	border : 5px solid black;	/* can alter thickness and colour of circle on this line */
 	margin : 0;
 	padding : 0;
+	
 }
 
 /* Circle Text Container - constrains text area to within the circle */
@@ -64,5 +97,46 @@ body{
 }
 
 .b{
-    background-color: "green";
+	background-color: green;
+}
+
+.a{
+	background-color: blue;
+}
+
+.button_a, .button_b, .arrowbutton{
+	position: absolute;
+}
+.button_b{
+	top:262px;
+	left:483px;
+}
+
+.button_a{
+    top: 297px;
+    left: 519px;
+}
+
+.arrow{
+	background-color: gold;
+}
+
+.arrows{
+	font-size: 25px;
+}
+.button_down{
+	top: 263px;
+    left: 561px;
+}
+.button_up{
+	top: 203px;
+    left: 561px;
+}
+.button_left{
+	top: 233px;
+    left: 530px;
+}
+.button_right{
+	top: 233px;
+    left: 591px;
 }
