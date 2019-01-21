@@ -5,7 +5,7 @@ function zeldasLullaby(code){
     if (code.toString() === song.toString()){
         console.log("Zelda's Lullaby")
         const lullaby = new Audio ("./sounds/songs/Ocarina_-_Zelda's_Lullaby.mp3");
-        lullaby.currentTime = 5;
+        lullaby.currentTime = 4.5;
         lullaby.play();
     } 
 }
