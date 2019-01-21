@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 body{
-    font-family: 'Press Start 2P', cursive;
-   
+	font-family: 'Press Start 2P', cursive;
+	display: flex;
+	justify-content: center;
 }
 
 .container{
 	text-align: center;
 	padding: 0 20%;
-	height:100%;
+	max-height: 500px;
+	max-width:500px
 }
 
 .buttons {
-	padding:100% 0;
+	position: relative;
+	width:500px;
+	height: 500px;
 	top:0;
 	left:0;
 	border: solid 2px #000;
@@ -21,7 +25,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position-y: 0%;
-	
+	box-sizing: border-box;
 }
 
 .controller-image{
@@ -38,16 +42,16 @@ body{
 /* Main Container -  this controls the size of the circle */
 .button_container
 {
-	width : 40px;
-	height : 40px;
+	width : 6%;
+	height : 6%;
 	margin : 0;
 	padding : 0;
 /*	border : 1px solid red; */
 }
 
 .arrowbutton{
-	width: 30px;
-	height: 30px;
+	width: 4.5%;
+	height: 4.5%;
 }
 
 /* Circle Main draws the actual circle */
@@ -62,11 +66,12 @@ body{
 	
 }
 
+
 /* Circle Text Container - constrains text area to within the circle */
 .button_text_container
 {
 	/* area constraints */
-	width : 70%;
+	width : 7%;
 	height : 70%;
 	max-width : 70%;
 	max-height : 70%;
@@ -104,17 +109,17 @@ body{
 	background-color: blue;
 }
 
-.button_a, .button_b, .arrowbutton{
+.button_a, .button_b, .arrowbutton, .r ,.z{
 	position: absolute;
 }
 .button_b{
-	top:262px;
-	left:483px;
+	top:35.2%;
+	left:64.3%;
 }
 
 .button_a{
-    top: 297px;
-    left: 519px;
+    top: 41.5%;
+    left: 71%;
 }
 
 .arrow{
@@ -123,20 +128,60 @@ body{
 
 .arrows{
 	font-size: 25px;
+	top:37%;
+}
+.ab{
+	left:120%;
+}
+.leftright{
+	left:-100%;
 }
 .button_down{
-	top: 263px;
-    left: 561px;
+	top: 35.1%	;
+    left: 79.2%
 }
 .button_up{
-	top: 203px;
-    left: 561px;
+	top: 24.5%;
+    left: 79.2%;
 }
 .button_left{
-	top: 233px;
-    left: 530px;
+	top: 29.8%;
+    left: 73.5%;
 }
 .button_right{
-	top: 233px;
-    left: 591px;
+	top: 29.8%;
+    left: 85.3%;
+}
+
+.button_z{
+	width:100%;
+	height:120%;
+	border-radius:15%;
+}
+
+.button_r{
+	width:300%;
+	height:50%;
+	border-radius: 0 70% 0 0;
+}
+.button_z, .button_r{
+	border : 5px solid black;
+	background-color: gray;
+	margin:0;
+	padding:0;
+}
+
+.z{
+	top:60%;
+	left:66%;
+}
+
+.r{
+	top:9%;
+	left:72%;
+	transform: rotate(10deg);
+}
+
+.shoulder_text{
+	transform: rotate(-10deg) translateY(-45%)
 }
