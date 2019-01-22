@@ -8,9 +8,8 @@ body{
 
 .container{
 	text-align: center;
-	padding: 0 20%;
 	max-height: 500px;
-	max-width:500px
+	max-width: 500px
 }
 
 .buttons {
@@ -184,4 +183,38 @@ body{
 
 .shoulder_text{
 	transform: rotate(-10deg) translateY(-45%)
+}
+.button_instructions{
+	display:none;
+}
+
+.instruction{
+	height:30px;
+}
+
+
+@media only screen and (max-width: 500px){
+	.buttons{
+		background-image:none;
+		display: flex;
+		flex-direction: column;
+		width:50%;
+		height: auto;
+	}
+	.button_a, .button_b, .button_up, .button_down, .button_right, .button_left{
+		position: relative;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+		left: 50px;
+	}
+	h1{
+		font-size: 1.5rem;
+	}
+	.button_instructions{
+		display:flex;
+		flex-direction: column;
+		width:50%;
+		height:auto;
+	}
 }
