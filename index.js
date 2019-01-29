@@ -69,10 +69,10 @@ function playSound(event) {
     let acceptedKeyCodes = [37,38,39,40,65];
     if (acceptedKeyCodes.indexOf(code) !== -1){
     const sound = new Audio(`./sounds/notes/OOT_Notes_Ocarina_${code}_short.wav`);
-    const button = document.querySelector(`.button_container[data-key="${code}"]`)
+    // const button = document.querySelector(`.button_container[data-key="${code}"]`)
     sound.currentTime = 0;
     sound.play();
-    button.classList.add("pressed");
+    // button.classList.add("pressed");
     }
 }
 
