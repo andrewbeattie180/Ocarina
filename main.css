@@ -51,6 +51,7 @@ body{
 .arrowbutton{
 	width: 4.5%;
 	height: 4.5%;
+
 }
 
 /* Circle Main draws the actual circle */
@@ -119,6 +120,7 @@ body{
 .button_a{
     top: 41.5%;
     left: 71%;
+
 }
 
 .arrow{
